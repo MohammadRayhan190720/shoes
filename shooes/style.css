@@ -84,6 +84,7 @@ nav{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  object-fit:cover;
 }
 
 .header-container{
@@ -498,15 +499,50 @@ footer{
 
 /* responsive code start */
 
-@media (width < 1200px) {
+@media only screen and (max-width: 800px) {
   nav {
     padding: 1rem;
   }
+  
 
   .header-content h1 {
     font-size: 8rem;
     line-height: 6.5rem;
   }
+  .header-container{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+  .service-item{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  
+}
+  .banner{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+  .collection-container{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+ 
+}
+  .gallery{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+  .brands-container{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  
+}
+ .footer-container{
+
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+}
+  
 }
 
 @media (width < 900px) {
